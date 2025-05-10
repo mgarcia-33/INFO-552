@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+    <head>
+    <style>
+        body {
+            background-color: #f9e7fa ;
+        }
+        
+        /*header color*/
+            h1 {
+                color: #767576;
+                font-family: "Calibri";
+                text-align: center;
+            }
+            /*text color*/
+            p{
+                text-align: center;
+                color: #767576;
+                font-family: "Calibri";
+            }
+            /*list color*/
+            ol{
+                color: #767576;
+                font-family: "Calibri";
+                list-style-type: circle;
+            }
+        
+            /*class for boxes*/
+            .test{
+                margin: 15px;
+                padding: 25px;
+                background-color: #fef2d9;
+                color: #767576;
+            }
+        
+            /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+        
+            /* unvisited link */
+        a:link {
+            color: deeppink;
+          }
+          
+          /* visited link */
+          a:visited {
+            color: purple;
+          }
+          
+          /* mouse over link */
+          a:hover {
+            color: lightpink;
+          }
+          
+          /* selected link */
+          a:active {
+            color: indigo;
+          }
+    
+    
+          nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        background-color: #fcdaff;
+        height: 100%;
+        position: fixed;
+    }
+
+    nav li a{
+        display: block;
+        color: #6f3771;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    li a{
+        display: list-item;
+        color:  #767576;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+        
+        
+    
+        li a:hover:not(.active){
+            background-color: #af99bc;
+            color: #fbfafc;
+        }
+        .active{
+            background-color: #90bafb;
+        }
+    
+        .image{ 
+            display: block;
+            width: 150px;
+            height: 100%;
+    
+        }    
+    
+        </style>    
+</head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li> <a href="#index">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#resume">Resume</a></li>
+                <li> <a class = "active"; href="#projects">Projects</a></li>
+                <li> <a href="#associations">Associations</a></li>
+            </ul> 
+        </nav> 
+
+<div style="margin-left: 10%;padding:0px 0px; height:500px;">
+    <div class = "test">
+    <h1>Projects</h1>
+
+        <p style=" text-align: left;">
+            <h4>Data Modeling and Web Application: D.C. Monuments-Restaurants</h4>
+            <p style=" text-align: right;"><i>February 2021 – May 2021 </i></p>
+            <p>
+            <ol>
+                <li>
+                    Complied database of U.S. Capitol monuments and restaurants using SQL. 
+                </li>
+                <li>
+                    Pitched presentation and detailed report of website design incorporating 
+                    database while establishing layout in consideration of HTML, CSS, JavaScript, and VanillaJS with Bulma. 
+                </li>
+                <li>
+                    Developed frontend and backend of website with team using Heroku and GitHub. 
+                </li>
+                <li>
+                    Responsible for HTML and CSS of website design. 
+                </li>
+              </ol>
+            </p>
+
+            <h4>Statistics in Information Science: Natural Disaster Analysis</h4>
+            <p style=" text-align: right;"><i>October 2020 – December 2020</i></p>
+            <ol>
+              <li>
+                Examined dataset containing over 50,000 records of U.S. 
+                natural disasters categorized into sixteen incident types that show incident 
+                begin/end/closing dates, FIPS codes, states, and zip codes using R. 
+              </li>
+              <li>
+                Reported an analysis that confirmed hurricanes are shown to create the most 
+                damage while floods and the Corona Virus closely follow. 
+              </li>
+            </ol>
+      
+
+            <h4>Data Analysis: IoT Sensors in Waste Management</h4>
+            <p style=" text-align: right;"><i>September 2021 – December 2021</i></p>
+            <ol>
+              <li>
+                Leading team in analysis of applying IoT technology to assist waste management 
+                in highly populated cities like New York City as to understand the effects of 
+                potential Smart City development in the U.S. 
+              </li>
+              <li>
+                Running simulations using Python and R, using monetary savings as a measurement of success. 
+              </li>
+            </ol>
+        </p>
+        <h1>Previous Courses</h1>
+    <ol>
+        <li><h4>Information Innovation through Design Thinking</h4></li>
+            <p style=" text-align: left;"><i>- Fall Quarter 23-24</i></p>
+        <li><h4>Information Professionals and Information Ethics</h4></li>
+            <p style=" text-align: left;"><i>- Fall Quarter 23-24</i></p>
+        <li><h4>Users, Services, & Resources</h4></li>
+            <p style=" text-align: left;"><i>- Spring Quarter 23-24</i></p>
+    </ol>
+    </div>
+</div>
+</body>
+</html>
+
