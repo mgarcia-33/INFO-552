@@ -40,13 +40,12 @@
         }
 
         .quote{
-            margin-top: 20%;
+            margin-top: 10%;
             word-spacing: 1px;
             font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: arial;
             font-weight:bolder;
-            text-transform: uppercase;
-            width: 70%;
+            width: 50%;
         }
     
         /*class for boxes
@@ -73,6 +72,7 @@
       a:active {
         color: black;
       }
+
 
       nav ul {
     height: 69px;
@@ -111,11 +111,19 @@
         height: 20px;
         background-color: #f0b6e4;
     }
-
     .image{ 
-            width: 200px;
+        border-width: 3px;
+  border-style: solid;
+
+            width: 350px;
             display: block;
             margin: 0 auto 50px;
+            border-image: 
+    linear-gradient(
+      to bottom, 
+      black, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
     }
 
     .footer {
@@ -144,7 +152,28 @@
         justify-content: Space-around;
         text-align: center;
     }
-    
+
+    .image-about{
+    width: 75%;
+    display: block;
+    margin: 25px auto 25px;
+
+    }   
+
+    .image-charli{
+    width: 75%;
+    display: block;
+    margin: 25px auto 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      black, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+
+    }   
 
     </style>    
 </head>
@@ -157,8 +186,8 @@
 
 <nav>
     <ul>
-        <li> <a class = "active"; href="#index">home</a></li>
-        <li> <a href="/about">about</a></li>
+        <li> <a href="/index">home</a></li>
+        <li> <a  class = "active"; href="/about">about</a></li>
         <li> <a href="/contact.html">contact</a></li>
         <li> <a href="/resources">resources</a></li>
         <li> <a href="/socials">social media</a></li>
@@ -167,23 +196,45 @@
     </ul> 
 </nav> 
 
-
-<div class="flex-container">
-
-    <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
+    <div class = "home" >
+    <h2>Mission Statement</h2>
+    <p>
+        Our mission is to create a dedicated reference hub for individuals with disabilities. 
+        Our platform intentionally serves as a safe, inclusive environment where members can connect, share experiences, and 
+        stay informed about news, events, and opportunities that matter to them. Inspired by bold, unfiltered self-expression 
+        that's found in Charli XCX’s BRAT, we’re committed to fostering a space where authenticity is celebrated and community thrives. 
+        Through accessible, community-centered resources, we aim to cultivate belonging and empowerment because we are <i>better together.</i>
+    </p>
     </div>
 
-    <div class = "quote">
-        <p>“I go hard, I go fast, and I never look back”</p>
-        <p><i>―Charli xcx</i></p>
+    <div class="flex-container">
+
+        <div>
+            <img class="image-charli" src="charlixcx.jpg" alt="Charli Icon">
+        </div>
+    
+        <div>
+            <img class="image-about" src="aboutpic.jpeg" alt="Banner Image">
+    
+        </div>
+    
+        <div>
+            <img class="image-charli" src="charlixcx.jpg" alt="Charli Icon">
+        </div>
+            
     </div> 
 
-    <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
-    </div>
-        
-</div>
+    
+    <div class = "home" >
+        <h2>Purpose Statement</h2>
+        <p>
+            This site was created for people with disabilities to have a space that truly feels like theirs. 
+            It’s a place to find helpful information, stay informed about news and events, and connect with others in the community. 
+            Unlike general sites made for allies, 
+            this one is just for you. This is a supportive, welcoming space where you can share, grow, and celebrate what makes this community strong.
+        </p>
+        </div>
 
+   
     </body>
     </html>

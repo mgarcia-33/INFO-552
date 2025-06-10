@@ -17,7 +17,7 @@
         }
         /*text color*/
         p{
-            text-align: center;
+            text-align: left;
             color: black;
         }
         /*list color*/
@@ -30,7 +30,7 @@
             font-size: 20px;
             font-family: Arial;
             font-weight:bolder;
-            text-align: center;
+            text-align: left;
             margin-top: 5%;
             margin-bottom: 5%;
             padding: 0;
@@ -40,13 +40,12 @@
         }
 
         .quote{
-            margin-top: 20%;
+            margin-top: 10%;
             word-spacing: 1px;
             font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: arial;
             font-weight:bolder;
-            text-transform: uppercase;
-            width: 70%;
+            width: 50%;
         }
     
         /*class for boxes
@@ -111,11 +110,14 @@
         height: 20px;
         background-color: #f0b6e4;
     }
-
     .image{ 
-            width: 200px;
+       border-color: white;
+        border-radius: 12px;
+            width: 450px;
             display: block;
             margin: 0 auto 50px;
+ 
+    
     }
 
     .footer {
@@ -135,7 +137,7 @@
 }
 
 .flex-container {
-        margin: 15px;
+        margin-top: 13%;
         padding: 25px;
         display: flex;
         flex-direction: row;
@@ -143,6 +145,24 @@
        /** background-color: white; **/
         justify-content: Space-around;
         text-align: center;
+    }
+
+    .image-about{
+        width: 25%;
+        display: block;
+        margin: 50px auto 50px;
+
+    }
+
+    .image-butterfly{
+        width: 75%;
+        display: block;
+        margin: 25px auto 25px;
+    }  
+
+    .button{
+        background-color: #8ace00;
+        border-color: white;
     }
     
 
@@ -157,11 +177,11 @@
 
 <nav>
     <ul>
-        <li> <a class = "active"; href="#index">home</a></li>
+        <li> <a href="/index">home</a></li>
         <li> <a href="/about">about</a></li>
         <li> <a href="/contact.html">contact</a></li>
         <li> <a href="/resources">resources</a></li>
-        <li> <a href="/socials">social media</a></li>
+        <li> <a class = "active"; href="/socials">social media</a></li>
         <li> <a href="/local.html">local</a></li>
         <li> <a href="/emergency">emergency lines</a></li>
     </ul> 
@@ -169,21 +189,18 @@
 
 
 <div class="flex-container">
-
     <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
+        <img class="image-butterfly" src="butterfly.jpeg" alt="Butterfly Icon">
     </div>
 
-    <div class = "quote">
-        <p>“I go hard, I go fast, and I never look back”</p>
-        <p><i>―Charli xcx</i></p>
-    </div> 
+    <button class="button">
+    <a href="/party.html"><img src="button.jpeg" alt="oops the where did the party button go?"></a>
+    </button>
 
     <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
+        <img class="image-butterfly" src="butterfly.jpeg" alt="Butterfly Icon">
     </div>
-        
-</div>
+</div>   
 
     </body>
     </html>

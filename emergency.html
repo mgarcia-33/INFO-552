@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+    body {
+        background-color: #8ace00 ;
+    }
+    
+    /*header color*/
+        h1 {
+            color: #8ace00;
+            text-align: left;
+            font-size: 35px;
+        }
+        /*text color*/
+        p{
+            text-align: left;
+            color: black;
+            font-weight: bold;
+        }
+        /*list color*/
+        ol{
+            color: black;
+        }
+
+        .home{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            text-align: left;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .quote{
+            margin-top: 10%;
+            word-spacing: 1px;
+            font-size: 30px;
+            font-family: arial;
+            font-weight:bolder;
+            width: 50%;
+        }
+    
+        /*class for boxes
+      .test{
+            margin: 15px;
+            padding: 25px;
+            background-color: #fef2d9;
+            color: royalblue;
+        }*/
+    
+        /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+    
+        /* unvisited link */
+        a:link {
+        color: white;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #FF69B4;
+      }
+      
+      /* selected link */
+      a:active {
+        color: black;
+      }
+
+      nav ul {
+    height: 69px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    background-color: black;       
+    }
+
+    nav li a{
+        height: 69px;
+        text-align: center;
+        display: block;
+        color:  #b56cae;
+        padding: 25px 42px;
+        text-decoration: none;
+    }
+
+    .logo{
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    li a:hover:not(.active){
+        height: 20px;
+        background-color: #00c3f2;
+        color: #fbfafc;
+    }
+    .active{
+        height: 20px;
+        background-color: #f0b6e4;
+    }
+
+    .image{ 
+            width: 350px;
+            display: block;
+            
+            justify-content: left;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fc83;
+        -webkit-text-fill-color: #b56cae;
+        text-align: center;
+}
+
+.image-home{
+    padding-left: 55%;
+    display: flexbox;
+}
+
+.flex-container {
+        margin: 15px;
+        padding: 25px;
+        display:grid;
+        flex-direction: column;
+        color:  #767576;
+        justify-content:center;
+        text-align: center;
+    }
+
+    .image-about{
+    width: 25%;
+    display: block;
+    margin: 50px auto 50px;
+
+    }
+
+    .resources{
+        margin: 100px;
+        padding: 55px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        font-size: 17px;
+        color: #8ace00;
+    }
+    
+
+    </style>    
+</head>
+
+    <body>
+
+<div class = "logo">
+    <img class="logo" src="websitename.jpeg" alt="Website Name">
+</div>
+
+<nav>
+    <ul>
+        <li> <a href="/index">home</a></li>
+        <li> <a href="/about">about</a></li>
+        <li> <a href="/contact.html">contact</a></li>
+        <li> <a href="/resources">resources</a></li>
+        <li> <a href="/socials">social media</a></li>
+        <li> <a href="/local.html">local</a></li>
+        <li> <a class = "active"; href="/emergency">emergency lines</a></li>
+    </ul> 
+</nav> 
+
+    <div class = "home" >
+    <h2>Emergency Lines</h2>
+    <p>
+        If you’re in crisis or need urgent help, you’re not alone. Support is just a call or text away. 
+        <br>
+        <br>
+        This page lists emergency and crisis lines specifically chosen with the needs of people with disabilities in mind. 
+    </p>
+    </div>
+
+        <div class="resources">
+        <p>
+            <h1>Crisis Lines with Accessibility Options</h1>
+            
+            <h2>988 Suicide & Crisis Lifeline</h2>
+            <li><a href="https://www.988lifeline.org">988 Lifeline</a></li>
+            <br>
+            <li>Dial: 988</li>
+            <br>
+            <li><a href="https://www.988lifeline.org/988-asl">ASL Access</a></li>
+            
+            <h2>DeafLEAD</h2>
+            <li>24/7 crisis intervention, advocacy, and counseling for people who are Deaf or hard of hearing</li>
+            <br>
+            <li>Video Phone: 321-800-3323</li>
+            <br>
+            <li><a href="https://www.deaflead.com">DeafLEAD Website</a></li>
+
+            <h2>Crisis Text Line (Accessible to All)</h2>
+            <li>Free, 24/7 support via text from trained crisis counselors.</li>
+            <br>
+            <li>Text HOME to 741741</li>
+            <br>
+            <li><a href="https://www.crisistextline.org">Crisis Text Line Website</a></li>
+             
+            <h2>Disability Rights Hotline (USA)</h2>
+            <li>Legal assistance for abuse, neglect, and civil rights violations</li>
+            <br>
+            <li>Call: 1-800-776-5746</li>
+            <br>
+            <li>TTY: 1-800-719-5798</li>
+            <br>
+            <li><a href="https://www.ndrn.org">National Disability Rights Network</a></li>
+        </p>
+        </div>
+
+
+        <div class="resources">
+            <p>
+                <h1>Emergency Youth Lines</h1>
+
+                <h2>Crisis Text Line (Text-Based)</h2>
+                <li>For mental health, bullying, disability-related stress, trauma</li>
+                <br>
+                <li>Accessible for the Deaf, Hard of Hearing, non-speaking teens, those with social anxiety</li>
+                <br>
+                <li>Text: HELLO to 741741</li>
+            
+
+                <h2>The Trevor Project (LGBTQ+ Youth)</h2>
+                <li>For LGBTQ+ youth in crisis, including those with disabilities or mental health challenges</li>
+                <br>
+                <li>Accessibility: Text, live chat, and trained counselors familiar with overlapping identities</li>
+                <br>
+                <li>Text: Text START to 678678</li>
+                <br>
+                <li>Chat: <a href="https://www.thetrevorproject.org/">thetrevorproject.org</a></li>
+
+
+                <h2>Teen Line</h2>
+                <li>Run by: Trained teen volunteers, supervised by mental health professionals</li>
+                <br>
+                <li> For those who struggle with depression, self-harm, family issues, disability-related stress, social struggles</li>
+                <br>
+                <li>Text: Text TEEN to 839863</li>
+                <br>
+                <li>Chat: <a href="https://www.teenline.org/">teenlineonline.org</a></li>
+            </p>
+    </div>
+    </body>
+    </html>
