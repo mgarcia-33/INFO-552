@@ -20,9 +20,21 @@
             text-align: center;
             color: black;
         }
+
         /*list color*/
-        ol{
-            color: black;
+
+        .ol{
+            text-align: left;
+            text-indent: -3%; 
+            font-size: larger;
+            width: 80%;
+            margin: 15px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding: 10px;
+            background-color: black;
+            color: #8ace00;
+            margin-left: 9%;
         }
 
         .home{
@@ -43,10 +55,9 @@
             margin-top: 20%;
             word-spacing: 1px;
             font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: arial;
             font-weight:bolder;
-            text-transform: uppercase;
-            width: 70%;
+            width: 50%;
         }
     
         /*class for boxes
@@ -146,8 +157,20 @@
         flex-direction: row;
         color:  #767576;
        /** background-color: white; **/
-        justify-content: Space-around;
+        justify-content: center;
         text-align: center;
+    }
+
+    .image-accent1{
+    width: 50%;
+    display: block;
+    margin: 20px auto 15px;
+    }
+
+    .image-accent2{
+    width: 50%;
+    display: block;
+    margin: 20px auto 15px;
     }
     
 
@@ -162,9 +185,9 @@
 
 <nav>
     <ul>
-        <li> <a class = "active"; href="#index">home</a></li>
+        <li> <a href="#index">home</a></li>
         <li> <a href="/about">about</a></li>
-        <li> <a href="/contact.html">contact</a></li>
+        <li> <a class = "active"; href="/contact.html">contact</a></li>
         <li> <a href="/resources">resources</a></li>
         <li> <a href="/socials">social media</a></li>
         <li> <a href="/local.html">local</a></li>
@@ -172,22 +195,48 @@
     </ul> 
 </nav> 
 
+<div class = "home" >
+    <h2>Contact Us</h2>
+    <p>
+        We’re here for you - however you communicate!
+        <br>
+        <br>
+        If you have questions, feedback, or want to connect with our team, we offer multiple ways to get in touch. 
+        Whether you're reaching out about resources, events, accessibility support, or just want to say hello, 
+        we’re always happy to hear from you.
+        <br>
+        So reach out and "let's work it out on the remix."
+        <br>
+        <br>
+        <br>
+        <div class="ol">
+            <ol>Email: test@example.com</ol>
+            <ol>Phone/Voice: 000-000-0000</ol>
+            <ol>TTY (Text Telephone): 000-000-0000</ol>
+            <ol>ASL Interpreter Services: Available by request - please email us in advance to schedule</ol>
+            <ol>Alternative Formats: We’re happy to provide materials in Braille, large print, or audio upon request.</ol>
+        </div>
 
-<div class="flex-container">
+        <br>
+        <br>
+        <br>
+    
+        <div class="flex-container">
+            <div>
+                <img class="image-accent1" src="contact.jpeg" alt="border Icon">
+            </div>
 
-    <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
-    </div>
-
-    <div class = "quote">
-        <p>“I go hard, I go fast, and I never look back”</p>
-        <p><i>―Charli xcx</i></p>
-    </div> 
-
-    <div>
-        <img class="image" src="border.jpeg" alt="border Icon">
-    </div>
-        
+            <p>We’re committed to creating a space that’s inclusive, welcoming, and easy to navigate, online and offline. 
+            <br>
+            <br>
+            Your voice matters. 
+            </p>
+            <div>
+                <img class="image-accent2" src="contact1.jpeg" alt="border Icon">
+            </div>
+                
+        </div>
+    </p>
 </div>
 
     </body>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+    body {
+        background-color: #8ace00 ;
+    }
+    
+    /*header color*/
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        /*text color*/
+        p{
+            text-align: left;
+        }
+        /*list color*/
+        ol{
+            color: black;
+        }
+
+        .home{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            text-align: left;
+            
+            margin-bottom: 5%;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .quote{
+            margin-top: 10%;
+            word-spacing: 1px;
+            font-size: 30px;
+            font-family: arial;
+            font-weight:bolder;
+            width: 50%;
+        }
+    
+        /*class for boxes
+      .test{
+            margin: 15px;
+            padding: 25px;
+            background-color: #fef2d9;
+            color: royalblue;
+        }*/
+    
+        /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+    
+        /* unvisited link */
+        a:link {
+        color: white;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #f0b6e4;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #FF69B4;
+      }
+      
+      /* selected link */
+      a:active {
+        color: black;
+      }
+
+      nav ul {
+    height: 69px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    background-color: black;       
+    }
+
+    nav li a{
+        height: 69px;
+        text-align: center;
+        display: block;
+        color:  #b56cae;
+        padding: 25px 42px;
+        text-decoration: none;
+    }
+
+    .logo{
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    li a:hover:not(.active){
+        height: 20px;
+        background-color: #00c3f2;
+        color: #fbfafc;
+    }
+    .active{
+        height: 20px;
+        background-color: #f0b6e4;
+    }
+
+    .image{ 
+            width: 350px;
+            display: block;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fc83;
+        -webkit-text-fill-color: #b56cae;
+        text-align: center;
+}
+
+.image-home{
+    padding-left: 55%;
+    display: flexbox;
+}
+
+.flex-container {
+        margin: 15px;
+        padding: 25px;
+        display:grid;
+        flex-direction: column;
+        color:  #767576;
+        justify-content:center;
+        text-align: left;
+    }
+
+.flex-container1{
+        margin-right: 4%;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        color:  #767576;
+        justify-content:center;
+}
+
+    .image-about{
+    width: 25%;
+    display: block;
+    margin: 50px auto 50px;
+
+    }
+
+    .image-accent1{
+    width: 43%;
+    display: block;
+    margin: 20px auto 15px;
+    }
+
+    .image-accent2{
+    width: 45%;
+    display: block;
+    margin: 20px auto 15px;
+    }
+
+    .image-star{
+    width: 85%;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    .resources{
+        margin: 15px;
+        padding: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-width: 20px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        white, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+        background-color: black;
+        color: #8ace00;
+    }
+    
+
+    </style>    
+</head>
+
+    <body>
+
+<div class = "logo">
+    <img class="logo" src="websitename.jpeg" alt="Website Name">
+</div>
+
+<nav>
+    <ul>
+        <li> <a href="/index">home</a></li>
+        <li> <a href="/about">about</a></li>
+        <li> <a href="/contact.html">contact</a></li>
+        <li> <a class = "active"; href="/resources">resources</a></li>
+        <li> <a href="/socials">social media</a></li>
+        <li> <a href="/local.html">local</a></li>
+        <li> <a href="/emergency">emergency lines</a></li>
+    </ul> 
+</nav> 
+
+<div class="flex-container1">
+
+    <div>
+        <img class="image-accent1" src="accent2.jpeg" alt="Charli Icon">
+    </div>
+
+    <div>
+        <img class="image-star" src="stars1.jpeg" alt="star banner">
+    </div>
+
+    <div>
+        <img class="image-accent2" src="accent1.jpeg" alt="Charli Icon">
+    </div>
+        
+</div> 
+
+    
+    <div class = "home">
+    <h2>Resources</h2>
+    <p>
+        It can get difficult to find the information you need and as Charli xcx puts it, "Girl, it's so confusing sometimes to be a girl."
+        <br>
+        <br>
+        Here, you’ll find disability-focused resources. 
+        <br>
+        <br>
+        Covering everything from accessibility support, mental health, and community programs. Whether you're looking for practical info or ways to connect, this space is built with you in mind.
+
+    </p>
+    </div>
+
+    <div class="flex-container">
+
+        <div>
+            <img class="image" src="mental.jpeg" alt="mental health!!!">
+        </div>
+
+        <div class="resources">
+        <p>
+            <h4><a href="https://www.inclusivetherapists.com">Therapy & Counseling Services</a></h4>
+            <li> directory that highlights therapists committed 
+                to serving marginalized communities, including people with disabilities.
+            </li>
+            <br>
+
+            <h4><a href="https://mhanational.org/resources/">Mental Health America (MHA)</a></h4>
+            <li> Includes screening tools, advocacy guides, and disability-centered wellness resources.</li>
+            <br>
+
+            <h4><a href="https://www.thearc.org">The Arc</a></h4>
+            <li> Serves people with intellectual and developmental disabilities (IDD), offering support services and mental health advocacy across the U.S.</li>
+            <br>
+           
+            <h4><a href="https://www.psychhub.com">Psych Hub - Accessible Mental Health Videos</a></h4>
+            <li>  Provides explainer videos on anxiety, depression, trauma, and more — with captions, transcripts, and accessible formats.</li>
+            <br>
+        </p>
+        </div>
+
+        <div>
+            <img class="image" src="ed.jpeg" alt="education is supposed to be here">
+        </div>
+
+        <div class="resources">
+            <p>
+                <h4><a href="https://www.cast.org">CAST (Center for Applied Special Technology)</a></h4>
+                <li> The founders of Universal Design for Learning (UDL), offering frameworks and tools to make curriculum more inclusive.</li>
+                <br>
+
+                <h4><a href="https://www.bookshare.org">Bookshare</a></h4>
+                <li> A free resource for students with reading barriers, offering accessible eBooks in audio, Braille, and large font formats.</li>
+                <br>
+
+                <h4><a href="https://www.learningally.org">Learning Ally</a></h4>
+                <li>Provides audiobooks and reading tools for students with dyslexia or visual impairments, especially for K-12 and college students.</li>
+                <br>
+               
+                <h4><a href="https://www.ed.gov/ocr">Office for Civil Rights (OCR)</a></h4>
+                <li>Protects students from discrimination in schools and colleges. Students and parents can file complaints regarding accessibility and accommodations.</li>
+                <br>
+
+                <h4><a href="https://www.ndrn.org">National Disability Rights Network (NDRN)</a></h4>
+                <li>A legal advocacy network with state partners to support students facing barriers in public education.</li>
+                <br>
+
+                <h4><a href="https://www.respectability.org">RespectAbility</a></h4>
+                <li>Focuses on inclusive education and leadership development for disabled students, especially BIPOC and LGBTQIA+ youth.</li>
+                <br>
+               
+                <h4><a href="https://www.autisticadvocacy.org">Autistic Self Advocacy Network (ASAN)</a></h4>
+                <li>Offers plain-language guides and toolkits for self-advocacy in education settings.</li>
+                <br>
+            </p>
+            </div>
+    
+        <div>
+            <img class="image" src="community.jpeg" alt="why does nothing ever work ugh">
+        </div>
+    
+        <div class="resources">
+            <p>
+                <h4><a href="https://www.peersupportspace.org">Peer Support Space</a></h4>
+                <li>A peer-led organization offering virtual and in-person support groups, including those centered on disability and neurodivergence.</li>
+                <br>
+
+                <h4><a href="https://www.sinsinvalid.org">Sins Invalid</a></h4>
+                <li>A disability justice-based performance project that explores mental wellness through art, culture, and identity.</li>
+                <br>
+
+                <h4><a href="https://www.awnnetwork.org">Autistic Women & Nonbinary Network (AWN)</a></h4>
+                <li>Provides community, resources, and mental health support with a focus on autistic people who are women, nonbinary, and/or gender nonconforming. Emphasizes lived experience and peer support.</li>
+                <br>
+            </p>
+            </div>
+    
+
+        <div>
+            <img class="image" src="access.jpeg" alt="where is she omg">
+        </div>
+
+        <div class="resources">
+            <p>
+                <h4><a href="https://www.projectaction.com/">Easterseals Project Action</a></h4>
+                <li>Provides resources to improve accessible transportation and mobility across the U.S.</li>
+                <br>
+
+                <h4><a href="https://www.transitplanning4all.org">Transit Planning 4 All</a></h4>
+                <li>Advocates for inclusive, community-driven public transportation planning for older adults and people with disabilities.</li>
+                <br>
+
+                <h4><a href="https://www.ncil.org">Centers for Independent Living (CILs)</a></h4>
+                <li>Community-based organizations run by and for people with disabilities, offering peer support, advocacy, and services to increase independence.</li>
+                <br>
+
+                <h4><a href="https://www.homemods.org">National Resource Center on Supportive Housing and Home Modification</a></h4>
+                <li>Offers guidance on making homes safer and more accessible, especially for older adults and people with physical disabilities.</li>
+                <br>
+            </p>
+            </div>
+    
+            
+    </div>
+
+    <div class="flex-container1">
+
+        <div>
+            <img class="image-accent1" src="accent2.jpeg" alt="Charli Icon">
+        </div>
+    
+        <div>
+            <img class="image-star" src="stars1.jpeg" alt="star banner">
+        </div>
+    
+        <div>
+            <img class="image-accent2" src="accent1.jpeg" alt="Charli Icon">
+        </div>
+            
+    </div> 
+   
+    </body>
+    </html>
