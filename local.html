@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+    body {
+        background-color: #8ace00 ;
+    }
+    
+    /*header color*/
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+       
+        /*text color*/
+        p{
+            text-align: left;
+            color: black;
+        }
+        /*list color*/
+        ol{
+            color: black;
+        }
+
+        .home{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            text-align: left;
+            
+            margin-bottom: 5%;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .quote{
+            margin-top: 10%;
+            word-spacing: 1px;
+            font-size: 30px;
+            font-family: arial;
+            font-weight:bolder;
+            width: 50%;
+        }
+    
+        /*class for boxes
+      .test{
+            margin: 15px;
+            padding: 25px;
+            background-color: #fef2d9;
+            color: royalblue;
+        }*/
+    
+        /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+    
+        /* unvisited link */
+    a:link {
+        color: white;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #f0b6e4;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #0916ab;
+      }
+      
+      /* selected link */
+      a:active {
+        color: black;
+      }
+
+
+    nav ul {
+    height: 69px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    background-color: black;       
+    }
+
+    nav li a{
+        height: 69px;
+        text-align: center;
+        display: block;
+        color:  #b56cae;
+        padding: 25px 42px;
+        text-decoration: none;
+    }
+
+    .logo{
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    li a:hover:not(.active){
+        height: 20px;
+        background-color: #00c3f2;
+        color: #fbfafc;
+    }
+    .active{
+        height: 20px;
+        background-color: #f0b6e4;
+    }
+
+    .image{ 
+            width: 350px;
+            display: block;
+            justify-content: left;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fc83;
+        -webkit-text-fill-color: #b56cae;
+        text-align: center;
+}
+
+.image-home{
+    padding-left: 55%;
+    display: flexbox;
+}
+
+.flex-container {
+        margin: 15px;
+        display:grid;
+        flex-direction: column;
+        color:  #8ace00;
+        justify-content:center;
+        text-align: left;
+    }
+
+.flex-container1{
+        margin-right: 4%;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        color:  #767576;
+        justify-content:center;
+}
+
+    .image-about{
+    width: 25%;
+    display: block;
+    margin: 50px auto 50px;
+
+    }
+
+    .image-accent1{
+    width: 43%;
+    display: block;
+    margin: 20px auto 15px;
+    }
+
+    .image-accent2{
+    width: 45%;
+    display: block;
+    margin: 20px auto 15px;
+    }
+
+    .image-star{
+    width: 85%;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    .resources{
+        margin: 15px;
+        padding: 25px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        border-width: 10px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        #00c3f2, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    }
+
+   
+    
+
+    </style>    
+</head>
+
+    <body>
+
+<div class = "logo">
+    <img class="logo" src="websitename.jpeg" alt="Website Name">
+</div>
+
+<nav>
+    <ul>
+        <li> <a href="/index">home</a></li>
+        <li> <a href="/about">about</a></li>
+        <li> <a href="/contact.html">contact</a></li>
+        <li> <a href="/resources">resources</a></li>
+        <li> <a href="/socials">social media</a></li>
+        <li> <a class = "active"; href="/local">local</a></li>
+        <li> <a href="/emergency">emergency lines</a></li>
+    </ul> 
+</nav> 
+
+<div class="flex-container1">
+
+    <div>
+        <img class="image-accent1" src="accent2.jpeg" alt="Star Icon">
+    </div>
+
+    <div>
+        <img class="image-star" src="butterfly.jpeg" alt="star banner">
+    </div>
+
+    <div>
+        <img class="image-accent2" src="accent1.jpeg" alt="Star Icon">
+    </div>
+        
+</div> 
+
+    
+    <div class = "home" >
+    <h2>Local Events</h2>
+    <p>
+        Looking to connect with your community IRL? 
+        <br>
+        <br> 
+        Our Local Events page features helpful tips and tricks to 
+        discover accessible gatherings, workshops, and social meetups that center disability inclusion.
+        <br>
+        <br>
+        Finding local event is a great opportunity to build friendships, have fun, or 
+        to just feel like a brat out in the world! &#9829;
+    </p>
+    </div>
+
+  
+    <div class="flex-container">
+        <div>
+            <img class="image" src="local.jpeg" alt="Local Header">
+        </div>
+
+        <div class="resources">
+        <p>
+            <h2>Check Local Disability Organizations</h2>
+            
+            Start with local disability service providers, independent living centers, or advocacy groups. 
+            <br>
+            These organizations often host or promote:
+            <br>
+            <br>
+            <li>Support groups</li>
+            <br>
+            <li>Adaptive sports leagues</li>
+            <br>
+            <li>Arts programs</li>
+            <br>
+            <li>Workshops and community events</li>
+            <br>
+            <i>Tip: Google “[Your City] + disability center” or “[Your State] + independent living.”</i>
+        </p>
+         </div>
+         
+
+        <div class="resources">
+        <p>
+            <h2>Use Event Platforms with Filters</h2>
+
+            Websites like Eventbrite and Meetup allow you to search by location and use terms like:
+            <br>
+            <br>
+
+            <li>“Accessible events”</li>
+            <br>
+            <li>“Disability community”</li>
+            <br>
+            <li>“Inclusive meetups”</li>
+            <br>
+            <li>“Wheelchair-friendly events”</li>
+            <br>
+            <i>Tip: Use filters for date, location, and tags to narrow it down</i>
+        </p>
+         </div>
+
+
+        <div class="resources">
+        <p>
+            <h2>Check Public Institutions</h2>
+            Libraries, museums, and community centers often run inclusive programming like:
+            <br>
+            <br>
+            <li>Sensory-friendly exhibit hours</li>
+            <br>
+            <li>Sign language–interpreted performances</li>
+            <br>
+            <li>Inclusive game nights or movie screenings</li>
+
+
+        </p>
+         </div>
+
+         <div class="resources">
+            <p>
+                <h2>Join Facebook Groups or Discord Servers</h2>
+
+                Look for local or identity-specific groups like:
+                <br>
+                <br>
+                
+                <li>“[Your City] Disability Events”</li>
+                <br>
+                <li>“Queer + Disabled Meetups”</li>
+                <br>
+                <li>“Neurodivergent Creatives”</li>
+                <br>
+                <li>“Disability Book Club”</li>
+            </p>
+             </div>
+    </div>
+
+    
+    
+
+    <div class="flex-container1">
+
+        <div>
+            <img class="image-accent1" src="accent2.jpeg" alt="Star Icon">
+        </div>
+    
+        <div>
+            <img class="image-star" src="butterfly.jpeg" alt="star banner">
+        </div>
+    
+        <div>
+            <img class="image-accent2" src="accent1.jpeg" alt="Star Icon">
+        </div>
+            
+    </div> 
+    
+   
+    </body>
+    </html>

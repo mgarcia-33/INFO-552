@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+    body {
+        background-color: #8ace00 ;
+    }
+    
+    /*header color*/
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        /*text color*/
+        p{
+            text-align: left;
+            color: black;
+        }
+        /*list color*/
+        ol{
+            color: black;
+        }
+
+        .home{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            text-align: left;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .quote{
+            margin-top: 10%;
+            word-spacing: 1px;
+            font-size: 30px;
+            font-family: arial;
+            font-weight:bolder;
+            width: 50%;
+        }
+    
+        /*class for boxes
+      .test{
+            margin: 15px;
+            padding: 25px;
+            background-color: #fef2d9;
+            color: royalblue;
+        }*/
+    
+        /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+    
+        /* unvisited link */
+    a:link {
+        color: white;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #f0b6e4;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #0916ab;
+      }
+      
+      /* selected link */
+      a:active {
+        color: black;
+      }
+
+
+      nav ul {
+    height: 69px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    background-color: black;       
+    }
+
+    nav li a{
+        height: 69px;
+        text-align: center;
+        display: block;
+        color:  #b56cae;
+        padding: 25px 42px;
+        text-decoration: none;
+    }
+
+    .logo{
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    li a:hover:not(.active){
+        height: 20px;
+        background-color: #00c3f2;
+        color: #fbfafc;
+    }
+    .active{
+        height: 20px;
+        background-color: #f0b6e4;
+    }
+    .image{ 
+       border-color: white;
+        border-radius: 12px;
+            width: 450px;
+            display: block;
+            margin: 0 auto 50px;
+ 
+    
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fc83;
+        -webkit-text-fill-color: #b56cae;
+        text-align: center;
+}
+
+.image-home{
+    padding-left: 55%;
+    display: flexbox;
+}
+
+.flex-container {
+        margin-top: 13%;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        color:  #767576;
+       /** background-color: white; **/
+        justify-content: Space-around;
+        text-align: center;
+    }
+
+    .image-about{
+        width: 25%;
+        display: block;
+        margin: 50px auto 50px;
+
+    }
+
+    .image-butterfly{
+        width: 75%;
+        display: block;
+        margin: 25px auto 25px;
+    }  
+
+    .button{
+        background-color: #8ace00;
+        border-color: white;
+    }
+    
+
+    </style>    
+</head>
+
+    <body>
+
+<div class = "logo">
+    <img class="logo" src="websitename.jpeg" alt="Website Name">
+</div>
+
+<nav>
+    <ul>
+        <li> <a href="/index">home</a></li>
+        <li> <a href="/about">about</a></li>
+        <li> <a href="/contact.html">contact</a></li>
+        <li> <a href="/resources">resources</a></li>
+        <li> <a class = "active"; href="/socials">social media</a></li>
+        <li> <a href="/local.html">local</a></li>
+        <li> <a href="/emergency">emergency lines</a></li>
+    </ul> 
+</nav> 
+
+
+<div class="flex-container">
+    <div>
+        <img class="image-butterfly" src="butterfly.jpeg" alt="Butterfly Icon">
+    </div>
+
+    <button class="button">
+    <a href="/party.asp"><img src="button.jpeg" alt="oops the where did the party button go?"></a>
+    </button>
+
+    <div>
+        <img class="image-butterfly" src="butterfly.jpeg" alt="Butterfly Icon">
+    </div>
+</div>   
+
+    </body>
+    </html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+    body {
+        background-color: black;
+    }
+    
+    /*header color*/
+        h1 {
+            color: #8ace00;
+            text-align: center;
+            font-size: 50px;
+        }
+        /*text color*/
+        p{
+            text-align: center;
+            color: #8ace00 ;
+        }
+        .p2{
+            color: black;
+        }
+        /*list color*/
+        ol{
+            color: black ;
+            text-align: left;
+        }
+
+        .home{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            text-align: left;
+            margin-bottom: 5%;
+            padding: 0;
+            top: 0;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .party-intro{
+            word-spacing: 1px;
+            font-size: 20px;
+            font-family: Arial;
+            font-weight:bolder;
+            width: 75%;
+            margin: 100px auto 25px;
+            text-align: center;
+        }
+
+        .quote{
+            margin-top: 10%;
+            word-spacing: 1px;
+            font-size: 30px;
+            font-family: arial;
+            font-weight:bolder;
+            width: 50%;
+        }
+    
+        /*class for boxes
+      .test{
+            margin: 15px;
+            padding: 25px;
+            background-color: #fef2d9;
+            color: royalblue;
+        }*/
+    
+        /* css link info found from https://www.w3schools.com/css/css_link.asp*/
+    
+        /* unvisited link */
+    a:link {
+        color: white;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #f0b6e4;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #0916ab;
+      }
+      
+      /* selected link */
+      a:active {
+        color: black;
+      }
+
+
+      nav ul {
+    height: 69px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: auto;
+    gap: 50px;
+    display: flex;
+    background-color: #8ace00;       
+    }
+
+    nav li a{
+        height: 69px;
+        text-align: center;
+        display: block;
+        color:  #b56cae;
+        padding: 25px 42px;
+        text-decoration: none;
+    }
+
+    .logo{
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    li a:hover:not(.active){
+        height: 20px;
+        background-color: #00c3f2;
+        color: #fbfafc;
+    }
+    .active{
+        height: 20px;
+        background-color: #f0b6e4;
+    }
+    .image{ 
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            margin: 5px auto 10px;
+
+    }
+
+    .image-skull{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        margin: 5px auto 10px;
+    }
+
+    .footer {
+        font-family: Arial, Helvetica, sans-serif;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f9fc83;
+        -webkit-text-fill-color: #b56cae;
+        text-align: center;
+}
+
+.image-home{
+    padding-left: 55%;
+    display: flex;
+}
+
+.flex-container{
+        margin: 15px;
+        padding: 25px;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align: center;
+    }
+
+.flex-container1{
+        margin-right: 4%;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+}
+
+.flex-container2{
+       
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+}
+
+    .image-about{
+    width: 25%;
+    display: block;
+    margin: 50px auto 50px;
+
+    }
+
+    .image-accent1{
+    width: 63%;
+    display: flex;
+    margin: 20px auto 15px;
+    }
+
+    .image-accent2{
+    width: 65%;
+    display: flex;
+    margin: 20px auto 15px;
+    }
+
+    .image-star{
+    width: 85%;
+    display: block;
+    margin: 15px auto 15px;
+    }
+
+    .resources{
+        margin: 45px;
+        padding: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #8ace00;
+        border-width: 20px;
+        border-top: #FF69B4;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        #FF69B4, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    }
+
+    .image-welcome{
+        margin-top: 60%;
+        width: 100%;
+        display: flex;
+        margin: 50px auto 15px;
+    }
+    
+
+    </style>    
+</head>
+
+    <body>
+<nav>
+    <ul>
+        <li> <a href="/index">home</a></li>
+        <li> <a href="/about">about</a></li>
+        <li> <a href="/contact.html">contact</a></li>
+        <li> <a href="/resources">resources</a></li>
+        <li> <a href="/socials">social media</a></li>
+        <li> <a href="/local.html">local</a></li>
+        <li> <a href="/emergency">emergency lines</a></li>
+    </ul> 
+</nav> 
+
+<div class="flex-container2">
+    <div>
+        <img class="image-welcome" src="welcome.jpeg" alt="Welcome Banner">
+    </div>
+</div> 
+
+
+<div class="flex-container2">
+    <div>
+        <img class="image-accent1" src="tiger.jpeg" alt="Tiger Icon">
+    </div>
+
+    <div class = "party-intro">
+        <p>
+            Social media can be a powerful space for connection, advocacy, and representation. This section features platforms, creators, and 
+            hashtags centered on the disability community aimed to amplify voices, sharing lived experiences, and building community online. 
+            <br>
+            <br>
+            Whether you're looking for support, insight, or inspiration, these channels offer authentic perspectives and meaningful engagement.
+        </p>
+        </div>
+    <div>
+        <img class="image-accent2" src="tiger1.jpeg" alt="Tiger Icon">
+    </div>
+</div> 
+
+    <div class="resources">
+        <p2>
+            <h2>Virtual Book Clubs</h2>
+            <br>
+
+            <h4><a href="https://www.chronicallyiconicbookclub.com/?utm_source=chatgpt.com">Chronically Iconic Book Club</a></h4>
+            <li>Focus: Chronic illness & disability representation</li>
+            <li>Format: Monthly read with group chat discussions via Instagram (#chronicallyiconicbookclub)</li>
+            <br>
+
+            <h4><a href="https://basicallywonderful.org/disabled-babes-book-club">Disabled Babes Book Club</a></h4>
+            <li>Focus: Disabled readers & books featuring disabled representation</li>
+            <li>Format: Virtual meetings</li>
+            <br>
+            
+            <h4><a href="https://www.facebook.com/groups/eastersealsthrive/">Thrive Book Club</a></h4>
+            <li>Focus: Disability in literature; YA, fiction & nonfiction</li>
+            <li>Format: Ongoing online discussions; occasional Twitter chats and author Q&As 
+                (#ThriveBooks on Twitter/Facebook)</li>
+            <br>
+
+            <h4><a href="https://www.docswithdisabilities.org/book-club?utm_source=chatgpt.com">Access Disability Equity Book Club (Docs With Disabilities)</a></h4>
+            <li>Focus: Disability equity themes</li>
+            <li>Format: Virtual Zoom meetings with captioning and ASL support</li>
+        </div>
+
+     <div class="flex-container2">
+        <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+        <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+        <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+    </div>
+
+
+        <div class="resources">
+        <p2>
+            <h2>In-Person or Hybrid Book Clubs</h2>
+            <br>
+
+            <h4><a href="https://www.meetup.com/disability-justice-book-club/?utm_source=chatgpt.com">Disability Justice Book Club</a></h4>
+            <li>Focus: Exploring disability justice frameworks and literature</li>
+            <li>Format: Public Meetup group (Rockville, MD) that meets online—prioritizes 
+                accessibility and welcomes disabled people and allies</li>
+            <br>
+            
+            <h4><a href="https://www.meetup.com/books-and-banter-dc/">Books & Banter Book Club</a></h4>
+            <li>Focus: Diverse disability representation in writing</li>
+            <li>Format: Monthly Zoom meetups, sometimes featuring author discussions</li>
+            <br>
+
+            <h4><a href="specialneedsalliance.org">Special Needs Alliance Book Club</a></h4>
+            <li>Focus: Disability-related content with legal or caregiving perspectives</li>
+            <li>Format: Twice-yearly book selections followed by in-person discussions</li>
+            <br>
+            
+            <h4><a href="https://sjpl.bibliocommons.com/events/678d90bbfea9b97171008d77?utm_source=chatgpt.com">Virtual Access Book Club</a></h4>
+            <li>Focus: Building relationships through literature for adults with disabilities</li>
+            <li>Format: Aimed at adults (18+); free virtual Zoom events</li>
+        </p>
+        </div>
+       
+   
+    
+             <div class="flex-container2">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+            </div>
+
+        <div class="resources">
+            <p2>
+                <h2>Podcasts</h2>
+                <br>
+
+                <h4><a href="https://www.theaccessiblestall.com/">The Accessible Stall</a></h4>
+                <li>Hosted by Emily Ladau and Kyle Khachadurian: <a href="https://x.com/i/flow/login?redirect_after_login=%2Femily_ladau">(@emily_ladau)</a>  and 
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2FImNotKardashian">(@ImNotKardashian)</a></li>
+                
+                <li>Casual conversations and debate about both light and heavy everyday disability topics, 
+                between two friends who often have different takes on disability issues.</li>
+                
+                <li>Transcripts included.</li>
+                <br>
+
+                <h4><a href="https://disabilityvisibilityproject.com/podcast-2/">The Disability Visibility Podcast</a></h4>
+                <li>Hosted by Alice Wong: <a href="https://x.com/i/flow/login?redirect_after_login=%2FDisVisibility">(@DisVisability)</a></li>
+                
+                <li>In-depth interviews and discussions with disability community leaders and creators on disability identity, culture, activism and politics, 
+                    with an emphasis on intersections of disability and race, gender, sexuality, and other marginalized identities.</li>
+                
+                <li>Transcripts included.</li>
+                <br>
+               
+                <h4><a href="https://barrierfreefutures.libsyn.com/">Barrier Free Futures Podcast</a></h4>
+                
+                <li>Hosted by Bob Kafka</li>
+                <li>Interviews with disability activists and other disabled people in the disability community 
+                on current disability issues, history, and experiences.</li>
+                <li>Shows posted after December 2020 have transcripts.</li>
+                <br>
+                
+                <h4><a href="https://www.downtothestruts.com/episodes">Down to the Struts </a></h4>
+                
+                <li>Hosted by Qudsiya Naqui</li>
+                <li>A look at accessible design, both physical and cultural, from a wide variety of angles and voices.</li>
+                <li>Transcripts included.</li>
+                <br>
+                
+                <h4><a href="https://www.powernotpitypod.com/">Power Not Pity</a></h4>
+
+                <li>Hosted by Bri M.: <a href="https://x.com/i/flow/login?redirect_after_login=%2Fpowernotpity">(@powernotpity)</a></li>
+                <li>Exploring the full range of disability experience, particularly through the stories and work of disabled people of color.</li>
+                <li>Transcripts included.</li>
+                <br>
+                
+                <h4><a href="https://included.libsyn.com/">Included: The Disability Equity Podcast</a></h4>
+               
+                <li>Hosted by Bonnielin Swenor, Ph.D. and Nick Reed</li>
+                <li>Discussions and interviews aimed at fighting ableist stereotypes and fully understanding trends in disability issues and policy.</li>
+                <li>Transcripts included.</li>
+                <br>
+                
+                <h4><a href="https://www.bbc.co.uk/programmes/p02r6yqw/episodes/downloads">Ouch! … the cabin fever podcast</a></h4>
+                
+                <li>Hosted by Beth Rose, Emma Tracey, Keiligh Baker and Kate Monaghan
+                <li>Covers a wide range of disability issues, often more than one topic in each episode. It’s scope is global, but with a focus on the United Kingdom.
+                <li>Transcripts included.</li>
+            </p>
+             </div>
+
+             <div class="flex-container2">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+            </div>
+             
+
+             <div class="resources">
+                <p2>
+                    <h2>YouTube & Video Creators</h2>
+                    <br>
+
+                    <h4>Jo Beckwith <a href="https://www.youtube.com/@FootlessJo">(Footless Jo)</a></h4>
+                    A below‑knee amputee sharing candid videos about disability, mental health, prosthetic life, and trauma recovery—boasting over 1 million subscribers 
+                   
+                    <br>
+                    <h4>Molly Burke <a href="https://www.youtube.com/@MollyBurkeOfficial">(@MollyBurkeOfficial)</a></h4>
+                    A visually impaired (retinitis pigmentosa) Canadian creator with nearly 2 million subscribers, covering life as a blind woman, guide-dog adventures, beauty, and advocacy 
+                    
+                    <br>
+                    <h4>Annie Segarra <a href="https://www.youtube.com/@theannieelainey">(Annie Elainey)</a></h4>
+                    A queer Latinx disability rights activist who documents her experience with Ehlers‑Danlos syndrome via vlogs, art, and social justice discussions
+                    
+                    <br>
+                    <h4>Zach Anner <a href="https://www.zachanner.com/">(@zachanner)</a></h4>
+                    A comedian and motivational speaker with cerebral palsy; he offers humorous vlogs, sketches, and travel storytelling
+                   
+                    <br>
+                    <h4>Shane Burcaw & Hannah <a href="https://www.youtube.com/c/squirmyandgrubs">(Squirmy & Grubs)</a></h4>
+                    An interabled couple’s channel; Shane lives with Spinal Muscular Atrophy and they blend humor with insights into disability life
+                    
+                </p>
+            </div>
+
+
+            <div class="flex-container2">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+                <img class="image-skull" src="skull.jpeg" alt="Skull Icon">
+            </div>
+             
+
+             <div class="resources">
+                <p2>
+                    <h2>Instagram & TikTok Influencers</h2>
+                    <br> 
+
+                    <h4> Imani Barbarin <a href="https://www.instagram.com/crutches_and_spice/?hl=en">(@crutches_and_spice)</a></h4>
+                    Imani is an American writer and disability rights activist living with cerebral palsy who is known for sharp insights, humor, and advocacy content.
+                    <br>
+                    
+                    <h4>Spencer West <a href="https://www.instagram.com/spencer2thewest/">(@spencer2thewest)</a></h4>
+                    Spencer is known for motivational content and disability advocacy after losing his legs as a child. He shares life, travel, and empowerment posts.
+                    <br>
+                    
+                    <h4>Kevin Ortiz <a href="https://www.instagram.com/wheelchairkev/?hl=en">(@wheelchairkev)</a></h4>
+                    Kevin is a wheelchair user and advocate who posts about mobility, accessible living, and navigating daily life with positivity.
+                    <br>
+                    
+                    <h4>Jillian Mercado <a href="https://www.instagram.com/jillianmercado/">(@jillianmercado)</a></h4>
+                    Jillian is a model and creative with muscular dystrophy; she blends accessible fashion with advocacy through her posts.
+                    <br>
+                    
+                    <h4>Olivia Lutfallah <a href="https://www.instagram.com/olivialutfallah/?hl=en">(@olivialutfallah)</a></h4>
+                    Olivia is a neurodivergent TikToker known for comedic skits and educational content that’s informative and heartwarming.
+                    <br>
+                    
+                    <h4>Jessica Kellgren‑Fozard <a href="https://www.instagram.com/jessicaoutofthecloset/?hl=en">(@jessicaoutofthecloset)</a></h4>
+                    Jessica is a deaf creator living with chronic illness, sharing vintage style, Deaf culture insights, and LGBTQ+ disability topics.
+                    <br>
+                    
+
+
+                </p>
+            </div>
+    </div>
+
+    <div class="flex-container1">
+
+        <img class="image-star" src="footerimage.jpeg" alt="star banner">
+            
+    </div> 
+   
+    </body>
+    </html>
